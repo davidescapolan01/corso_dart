@@ -9,7 +9,6 @@ void main(List<String> arguments) {
 */
 //#endregion
 
-
 //#region 04 Variabili
 /*
 void main(List<String> arguments) {
@@ -91,6 +90,7 @@ void main(List<String> arguments) {
 //#endregion
 
 //#region 06 Null
+/*
 void main(List<String> arguments) {
   int prova; //di default ogni variabile non può essere null
   //print(prova); //int non è nullabile quindi tira eccezione
@@ -99,5 +99,38 @@ void main(List<String> arguments) {
   nullableInt = 5;
   print(nullableInt);
   print(nullableInt.runtimeType);
+}
+*/
+//#endregion
+
+//#region 07 Tipi_Di_Dati
+void main(List<String> arguments) {
+  num numProva = 2; //da num ereditano int e double, quindi su num si possono assegnare sia numeri interi che numeri con la virgola
+  int intProva = 5;
+  double doubleProva = 5.5;
+
+  String stringProva = "test";
+
+  bool boolProva = true;
+
+  List listProva = [5,2,3];
+  Set setProva = {1,2,3};
+  Map mapProva = {"nome": "Luca", "cognome": "Rossi"};
+
+  Runes runeProva = new Runes('\u{1f605}'); //creano emoji, questa è 😅
+  //========================================================================================================================
+  //                                         Se ne parlerà in una lezioone prossima                                         
+  //========================================================================================================================
+  dynamic dynamicProva;
+
+  void test; //anche void è un tipo di dato
+
+  //null //anche null è un tipo di dato
+  Object objProva;
+  Future futureProva;
+  Stream streamProva;
+  Iterable iterableProva;
+  Never neverProva;
+
 }
 //#endregion
