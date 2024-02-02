@@ -136,7 +136,7 @@ void main(List<String> arguments) {
 */
 //#endregion
 
-//#region 03 Installazione_&_Creazione_Progetto
+//#region 08 Numeri
 void main(List<String> arguments) {
   String stringa = "5";
   num numero = 5.5; //da num ereditano int e double, quindi su num si possono assegnare sia numeri interi che numeri con la virgola
