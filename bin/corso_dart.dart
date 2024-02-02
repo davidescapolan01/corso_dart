@@ -104,8 +104,9 @@ void main(List<String> arguments) {
 //#endregion
 
 //#region 07 Tipi_Di_Dati
+/*
 void main(List<String> arguments) {
-  num numProva = 2; //da num ereditano int e double, quindi su num si possono assegnare sia numeri interi che numeri con la virgola
+  num numProva = 2;
   int intProva = 5;
   double doubleProva = 5.5;
 
@@ -131,6 +132,98 @@ void main(List<String> arguments) {
   Stream streamProva;
   Iterable iterableProva;
   Never neverProva;
+}
+*/
+//#endregion
 
+//#region 03 Installazione_&_Creazione_Progetto
+void main(List<String> arguments) {
+  String stringa = "5";
+  num numero = 5.5; //da num ereditano int e double, quindi su num si possono assegnare sia numeri interi che numeri con la virgola
+  int intero = 5;
+  double conVirgola = 6.5 + double.parse(stringa);
+
+  print('ToString');
+  print('ciao ' + conVirgola.toString());
+  print('');
+
+  double toRound = 14.6;
+
+  print('Ceil');
+  print(toRound.ceil());
+  print('');
+  print('Flor');
+  print(toRound.floor());
+  print('');
+  print('Round');
+  print(toRound.round());
+  print('');
+
+  int primoIntero = 10;
+  int secondoIntero = 3;
+
+  // +
+  print('+');
+  print(primoIntero + secondoIntero);
+  print('');
+  // -
+  print('-');
+  print(primoIntero - secondoIntero);
+  print('');
+  // *
+  print('*');
+  print(primoIntero * secondoIntero);
+  print('');
+  // /
+  print('/');
+  print(primoIntero / secondoIntero);
+  print('');
+  // %
+  print('%');
+  print(primoIntero % secondoIntero);
+  print('');
+  // ~/
+  print('~/');
+  print(primoIntero ~/ secondoIntero);
+  print('');
+
+  int interoOperatore = 3;
+  interoOperatore += 5;
+
+  print('Operatori');
+  print(interoOperatore);
+  print('');
+
+  int incremento = 5;
+  
+  print('Pre incremento');
+  print(incremento);
+  print(++incremento);
+  print(incremento);
+  print('');
+
+  incremento = 5;
+  
+  print('Post incremento');
+  print(incremento);
+  print(incremento++);
+  print(incremento);
+  print('');
+
+  incremento = 5;
+  
+  print('Pre decremento');
+  print(incremento);
+  print(--incremento);
+  print(incremento);
+  print('');
+  
+  incremento = 5;
+  
+  print('Post decremento');
+  print(incremento);
+  print(incremento--);
+  print(incremento);
+  print('');
 }
 //#endregion
