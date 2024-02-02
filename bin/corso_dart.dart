@@ -54,6 +54,7 @@ void main(List<String> arguments) {
 //#endregion
 
 //#region 05 Const_&_Final
+/*
 void main(List<String> arguments) {
   /*
   final finalProva = 5; //final indica che la variabile, una volta ricevuto un valore, non può essere più assegnata
@@ -85,5 +86,18 @@ void main(List<String> arguments) {
   //constProva.remove(3); //ERROR no modifica del contenuto su const
   //constProva.remove(4); //ERROR no modifica del contenuto su const
   //constProva.remove(5); //ERROR no modifica del contenuto su const
+}
+*/
+//#endregion
+
+//#region 06 Null
+void main(List<String> arguments) {
+  int prova; //di default ogni variabile non può essere null
+  //print(prova); //int non è nullabile quindi tira eccezione
+  int? nullableInt;
+  print(nullableInt);
+  nullableInt = 5;
+  print(nullableInt);
+  print(nullableInt.runtimeType);
 }
 //#endregion
