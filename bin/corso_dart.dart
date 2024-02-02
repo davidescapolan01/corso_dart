@@ -11,6 +11,7 @@ void main(List<String> arguments) {
 
 
 //#region 04 Variabili
+/*
 void main(List<String> arguments) {
   int prova = 5; //inizializzazione statica
 
@@ -48,5 +49,41 @@ void main(List<String> arguments) {
   print(varProva2.runtimeType);
   print(varProva2);
   print("");
+}
+*/
+//#endregion
+
+//#region 05 Const_&_Final
+void main(List<String> arguments) {
+  /*
+  final finalProva = 5; //final indica che la variabile, una volta ricevuto un valore, non può essere più assegnata
+  //finalProva = 5; //ERROR
+
+  final finalProva2;
+  finalProva2 = 6; //OK
+
+  const constProva = 5; //necessita un inizializzazione e non può più essere assegnata
+  constProva = 6; //ERROR
+  */
+
+  final finalProva = [3, 4, 5];
+  //finalProva = 5; //ERROR no int in List
+  //finalProva = [10, 100, 1000]; //ERROR no riassegnazione su final
+  finalProva.add(10); //OK
+  finalProva.add(100); //OK
+  finalProva.add(1000); //OK
+  finalProva.remove(3); //OK
+  finalProva.remove(4); //OK
+  finalProva.remove(5); //OK
+
+  const constProva = [3, 4, 5]; 
+  //constProva = 5; //ERROR no int in List
+  //constProva = [10, 100, 1000]; //ERROR no riassegnazione su conts
+  //constProva.add(10); //ERROR no modifica del contenuto su const
+  //constProva.add(100); //ERROR no modifica del contenuto su const
+  //constProva.add(1000); //ERROR no modifica del contenuto su const
+  //constProva.remove(3); //ERROR no modifica del contenuto su const
+  //constProva.remove(4); //ERROR no modifica del contenuto su const
+  //constProva.remove(5); //ERROR no modifica del contenuto su const
 }
 //#endregion
