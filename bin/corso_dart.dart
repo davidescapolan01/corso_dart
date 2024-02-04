@@ -137,6 +137,7 @@ void main(List<String> arguments) {
 //#endregion
 
 //#region 08 Numeri
+/*
 void main(List<String> arguments) {
   String stringa = "5";
   num numero = 5.5; //da num ereditano int e double, quindi su num si possono assegnare sia numeri interi che numeri con la virgola
@@ -225,5 +226,43 @@ void main(List<String> arguments) {
   print(incremento--);
   print(incremento);
   print('');
+}
+*/
+//#endregion
+
+//#region 09 String
+
+void main(List<String> arguments) {
+  String stringa1 = 'l\'amore ciao';
+  String stringa2 = 'ciao';
+  int intero = 5;
+
+  print(stringa2.length);
+  print('');
+  print(stringa2[1]);
+  print('');
+  print(stringa1 + stringa2);
+  print('');
+  print('${stringa2} ${intero}');
+  print('');
+  print('ciao sono in 6\ne mi trovo bene');
+  print('');
+  print("""ciao sono in 6
+e mi trovo bene""");
+  print('');
+  String stringaRow = r'ciao sono\nedo'; //non interpreta gli escape
+  print(stringaRow);
+  print('');
+  print(stringa1.contains('l'));
+  print('');
+  print(stringa1.lastIndexOf('o'));
+  print('');
+  print(stringa1.indexOf('o'));
+  print('');
+  print(stringa1.toUpperCase());
+  print('');
+  print(stringa1.split(' '));
+  print('');
+  print(stringa1.substring(4, 7));
 }
 //#endregion
