@@ -230,8 +230,8 @@ void main(List<String> arguments) {
 */
 //#endregion
 
-//#region 09 String
-
+//#region 09 Stringhe
+/*
 void main(List<String> arguments) {
   String stringa1 = 'l\'amore ciao';
   String stringa2 = 'ciao';
@@ -264,5 +264,33 @@ e mi trovo bene""");
   print(stringa1.split(' '));
   print('');
   print(stringa1.substring(4, 7));
+}
+*/
+//#endregion
+
+//#region 10 Booleani
+void main(List<String> arguments) {
+  bool booleano = true;
+
+  print(booleano);
+  print('');
+  
+  int numero = 5;
+  print(numero == 7);
+  print('');
+  print(numero!=0);
+  print('');
+  String stringa = 'qwerty';
+  print(stringa.isNotEmpty);
+  print('');
+  print(stringa.isEmpty);
+  print('');
+
+  if (booleano) {
+    print('condizione vera');
+  }
+  else{
+    print('condizione falsa');
+  }
 }
 //#endregion
