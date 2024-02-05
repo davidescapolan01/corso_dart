@@ -269,6 +269,7 @@ e mi trovo bene""");
 //#endregion
 
 //#region 10 Booleani
+/*
 void main(List<String> arguments) {
   bool booleano = true;
 
@@ -292,5 +293,102 @@ void main(List<String> arguments) {
   else{
     print('condizione falsa');
   }
+}
+*/
+//#endregion
+
+//#region 11 Liste
+void main(List<String> arguments) {
+  List<int> listProva = [1,2,3,4,5,6,7,8,9];
+  var listaDinamica = [1,2,3.0, 'test', true, null];
+
+  List<int> a = [1,2,3];
+  List<int?> b = [1,2,3,4,null];
+  List<int>? c = null;
+  List<int?>? d = [1,2,3, null];
+  d = null;
+
+  print('lista');
+  print(listProva);
+  print('');
+
+  print('elemento della lista');
+  print(listProva[3]);
+  print('');
+
+  print('lunghezza lista');
+  print(listProva.length);
+  print('');
+
+  print('ultimo elemento della lista');
+  print(listProva[listProva.length - 1]);
+  print('');
+
+  listProva.add(15);
+  print('aggiunge elemento alla lista');
+  print(listProva);
+  print('');
+
+  listProva.addAll(a);
+  print('lista di elementi alla lista');
+  print(listProva);
+  print('');
+
+  listProva = [1,2,3,4, ...a];
+  print('aggiunge alla lista con spread operator');
+  print(listProva);
+  print('');
+
+  print('coincatenazione di add consecutivi');
+  listProva = [1,2,3,4]
+  ..add(5)
+  ..add(5)
+  ..add(5)
+  ..add(5);
+  print(listProva);
+  print('');
+
+  print('rimuovere elementi specifici');
+  listProva.remove(3);
+  print(listProva);
+  print('');
+
+  print('rimuovere elemenati a indice x');
+  listProva.removeAt(4);
+  print(listProva);
+  print('');
+
+  print('pulizia della lista');
+  listProva.clear();
+  print(listProva);
+  print('');
+
+  listProva = [1,4,6,8,3];
+
+  print('cicli');
+  listProva.forEach((item)=>print(item));
+  print('');
+
+  print('indeice di 6');
+  print(listProva.indexOf(6));
+  print('');
+
+  int qwerty = 7;
+  List<String> names = [
+    'Edo', 
+    'Luca', 
+    'Marco', 
+    'Antonio',
+    if(qwerty > 5)'Anna',
+    'Leonardo'
+  ];
+  print('creazione condizionata di elementi della lista in fase di dichairazione');
+  print(names);
+  print('');
+
+List<int> numbers = [for(int i = 0; i < 100; i++) i];
+  print('creazione iterativa di elementi della lista in fase di dichairazione');
+  print(numbers);
+  print('');
 }
 //#endregion
