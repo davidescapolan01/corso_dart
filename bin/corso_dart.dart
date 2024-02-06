@@ -298,6 +298,7 @@ void main(List<String> arguments) {
 //#endregion
 
 //#region 11 Liste
+/*
 void main(List<String> arguments) {
   List<int> listProva = [1,2,3,4,5,6,7,8,9];
   var listaDinamica = [1,2,3.0, 'test', true, null];
@@ -390,5 +391,93 @@ List<int> numbers = [for(int i = 0; i < 100; i++) i];
   print('creazione iterativa di elementi della lista in fase di dichairazione');
   print(numbers);
   print('');
+}
+*/
+//#endregion
+
+//#region 12 Sets
+void main (List<String>arguments) {
+  Set provaSet = {1,2,2,3,4,4,5}; //set rimuove i doppioni
+  print('cerazione set con doppioni');
+  print(provaSet); //{1,2,3,4,5}
+  print('');
+
+  //print(provaSet[2]); //set non garantisce l'ordine quindi non si puo usare l'indice per recuperare il valore
+
+  var set1 = Set();
+  Set<String> set2 = {'cioa', 'prova', 'ciao', 'bello'};
+  print('set con doppioni in stringa');
+  print(set1);
+  print('');
+
+  var set3 = <int>{};
+  set3.add(3);
+  set3.add(5);
+  set3.add(7);
+  set3.add(2);
+  set3.add(6);
+  set3.add(1);
+  print('set con creazione e aggiunta elementi');
+  print(set3);
+  print('');
+
+  var set4 = Set();
+  set4.addAll({10, 100, 1000});
+  print('set con agginta di set di elementi');
+  print(set4);
+  print('');
+
+  var set5 = <int>{...set3, if(2>5) 5};
+  print('set con copia tramite spread operator e if claus in creazione');
+  print(set5);
+  print('');
+
+  var set6 = <int>{for(var i in set3) i + 6};
+  print('set con for claus in dichiarazione');
+  print(set6);
+  print('');
+
+  set6.remove(11);
+  print('rimozione del valore 11 dal set');
+  print(set6);
+  print('');
+
+  set6.removeAll({8,12,9});
+  print('rimozione di un set di valori');
+  print(set6);
+  print('');
+
+  set6.removeWhere((element) => element < 10);
+  print('rimuove gli elementi minori di 10');
+  print(set6);
+  print('');
+
+  set6 = {4,6,9,23,675,23,67,32,9};
+  print('ciclo for sugli elementi di set');
+  set6.forEach((element) {print(element);});
+  print('');
+
+  set6.remove(set6.elementAt(0));//occhio a rimuovere a indice x che l'ordine non è garantito
+  set6.add(101);
+  print('rimuove elemeto all\'indice x per aggiungerne una altro');
+  print(set6);
+  print('');
+
+  //intersect difference union
+  var set01 = {1,2,3};
+  var set02 = {2,5,6};
+
+  print('elementi in comune tra 2 set');
+  print(set01.intersection(set02));
+  print('');
+
+  print('elementi non comuni tra 2 set');
+  print(set01.difference(set02));
+  print('');
+  
+  print('set che è l\'unione di 2 set');
+  print(set01.union(set02));
+  print('');
+
 }
 //#endregion
